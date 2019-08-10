@@ -1,0 +1,145 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "montserrat-regular";
+	transition: 0.36s ease;
+
+}
+
+#cont{
+	width: 100%;
+	Height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cont input{
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #2d3b47;
+	color: #333;
+	font-size: 18px;
+}
+
+#cont input:focus{
+	border-bottom: 2px solid #2196f3;
+}
+
+#cont button{
+	padding: 0.5em 1em;
+	Border: none;
+	background-color: #2d3b47;
+	color: #eee;
+	border-radius: 6px;
+	Margin: 0 0 0 1em;
+	position: relative ; 
+	perspective: 200px;
+	
+}
+
+#cont button:active{
+	background-color: #888;
+	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+}
+
+.output{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -500%);
+	-webkit-transform: translate(-50%, -500%);
+	background-color: #2d3b47;
+	width: 200px;
+	Height: 200px;
+	opacity: 0;
+	border-radius: 1em;
+	transition: all 0.64s ease;
+}
+
+.output div{
+    text-align: center;
+	width: 100%;
+}
+
+.output div p{
+	color: #eee;
+	margin: 1em 0;
+	overflow-x: auto;
+	/* display: flex;
+	align-items: center; */
+	height: 2em;
+	width: 100%;
+
+}
+
+div.out{
+    color: #eee;
+	margin: 1em 0;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	overflow-x: auto;
+    height: 4em;
+    white-space: nowrap;
+	width: 100%;
+	padding:0 1em;
+	position: relative;
+	top: 0;
+
+}
+
+div.out::after, div.out::before {
+    content: "";
+    width: 60px;
+    height: 100%;
+	position: absolute;
+	background: linear-gradient(90deg, rgba(45, 59, 71, 1), rgba(45, 59, 71, 0));
+}
+
+div.out::after{
+	left: 0;
+	
+}
+
+div.out::before{
+	right: 0;
+	transform: rotateY(180deg)
+}
+
+
+.out span{
+	flex-flow: nowrap;
+	text-align: center;
+
+}
+
+
+#show{
+	width: 60px;
+	height: 60px;
+	background-color: #2d3b47;
+	Border: none;
+	border-radius: 50%;
+	Position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(-50%, 50%);
+	-webkit-transform: translate(-50%, 50%);
+	color: #eee;
+}
+
+.show{
+	opacity: 1;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transition: all 0.64s ease;
+}
+.open{
+	background-color: #2196f3 !important;
+}
